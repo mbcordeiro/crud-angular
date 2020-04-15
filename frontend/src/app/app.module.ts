@@ -14,7 +14,9 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
-import { ProductComponent } from './views/product/product.component'
+import { ProductComponent } from './views/product/product.component';
+import { RedDirective } from './directives/red.directive';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ProductComponent } from './views/product/product.component'
     NavComponent,
     HomeComponent,
     ProductComponent,
+    RedDirective,
+    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
