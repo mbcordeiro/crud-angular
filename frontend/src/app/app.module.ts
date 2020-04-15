@@ -13,7 +13,8 @@ import { MatCardModule } from '@angular/material/card'
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
-import { HomeComponent } from './views/home/home.component'
+import { HomeComponent } from './views/home/home.component';
+import { ProductComponent } from './views/product/product.component'
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HomeComponent } from './views/home/home.component'
     FooterComponent,
     NavComponent,
     HomeComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
