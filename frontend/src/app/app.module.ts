@@ -23,6 +23,7 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductComponent } from './views/product/product.component';
 import { RedDirective } from './directives/red.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     ProductComponent,
     RedDirective,
     ProductCreateComponent,
+    ProductReadComponent
   ],
   imports: [
     BrowserModule,
