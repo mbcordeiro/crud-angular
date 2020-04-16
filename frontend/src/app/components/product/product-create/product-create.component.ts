@@ -8,10 +8,7 @@ import { ProductService } from './../product.service';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
-  product: Product = {
-    name: '',
-    price: null
-  }
+  product: Product 
 
   constructor(
     private productService: ProductService,
@@ -19,7 +16,7 @@ export class ProductCreateComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-      
+
   }
   
   createProduct(): void {
