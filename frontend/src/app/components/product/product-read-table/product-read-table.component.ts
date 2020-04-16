@@ -1,14 +1,14 @@
-import { Product } from './../product.module';
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTable } from '@angular/material/table';
-import { ProductReadTableDataSource} from './product-read-table-datasource';
+import { Product } from "./../product.module";
+import { AfterViewInit, Component, OnInit, ViewChild } from "@angular/core";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatSort } from "@angular/material/sort";
+import { MatTable } from "@angular/material/table";
+import { ProductReadTableDataSource } from "./product-read-table-datasource";
 
 @Component({
-  selector: 'app-product-read-table',
-  templateUrl: './product-read-table.component.html',
-  styleUrls: ['./product-read-table.component.css']
+  selector: "app-product-read-table",
+  templateUrl: "./product-read-table.component.html",
+  styleUrls: ["./product-read-table.component.css"],
 })
 export class ProductReadTableComponent implements AfterViewInit, OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -17,7 +17,7 @@ export class ProductReadTableComponent implements AfterViewInit, OnInit {
   dataSource: ProductReadTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'price'];
+  displayedColumns = ["id", "name", "price"];
 
   ngOnInit() {
     this.dataSource = new ProductReadTableDataSource();

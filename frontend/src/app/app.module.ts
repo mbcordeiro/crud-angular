@@ -28,8 +28,8 @@ import { RedDirective } from "./directives/red.directive";
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
 import { ProductReadComponent } from "./components/product/product-read/product-read.component";
 import { ProductReadTableComponent } from "./components/product/product-read-table/product-read-table.component";
-import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
-import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { ProductUpdateComponent } from "./components/product/product-update/product-update.component";
+import { ProductDeleteComponent } from "./components/product/product-delete/product-delete.component";
 
 import localePt from "@angular/common/locales/pt";
 import { registerLocaleData } from "@angular/common";
@@ -43,12 +43,12 @@ registerLocaleData(localePt);
     NavComponent,
     HomeComponent,
     ProductComponent,
-    RedDirective,
     ProductCreateComponent,
     ProductReadComponent,
     ProductReadTableComponent,
     ProductUpdateComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    RedDirective,
   ],
   imports: [
     BrowserModule,
