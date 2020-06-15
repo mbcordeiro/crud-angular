@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Product } from "./../product.model";
 import { Router, ActivatedRoute } from "@angular/router";
-import { Product } from "./../product.module";
 import { ProductService } from "./../product.service";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-product-update",
@@ -9,7 +9,7 @@ import { ProductService } from "./../product.service";
   styleUrls: ["./product-update.component.css"],
 })
 export class ProductUpdateComponent implements OnInit {
-  public product: Product;
+  product: Product;
 
   constructor(
     private productService: ProductService,
@@ -18,20 +18,20 @@ export class ProductUpdateComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get("id");
+    const id = +this.route.snapshot.paramMap.get("id");
     this.productService.readById(id).subscribe((product) => {
       this.product = product;
     });
   }
 
-  updateProduct() {
+  updateProduct(): void {
     this.productService.update(this.product).subscribe(() => {
       this.productService.showMessage("Produto atualizado com sucesso!");
       this.router.navigate(["/products"]);
     });
   }
 
-  cancel() {
+  cancel(): void {
     this.router.navigate(["/products"]);
   }
 }

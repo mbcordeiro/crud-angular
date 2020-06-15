@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
 import { HeaderService } from './header.service';
+import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -23,5 +24,4 @@ export class HeaderComponent implements OnInit {
   get routeUrl(): string {
     return this.headerService.headerData.routeUrl
   }
-
 }
